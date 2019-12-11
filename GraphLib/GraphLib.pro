@@ -25,6 +25,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES +=
 
 HEADERS += \
+        Edge.h \
+        Node.h \
         graph.h \
         graph_global.h  
 
@@ -33,4 +35,4 @@ unix {
     INSTALLS += target
 }
 
-include(../config.pro)
+CONFIG += c++17

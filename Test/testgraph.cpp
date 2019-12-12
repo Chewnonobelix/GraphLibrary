@@ -1,6 +1,6 @@
 #include "testgraph.h"
 
-TestGraph::TestGraph(QObject *parent) : QObject(parent)
+TestGraph::TestGraph() : QObject(nullptr)
 {
 
 }

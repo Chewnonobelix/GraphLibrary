@@ -1,5 +1,7 @@
 #ifndef TESTGRAPH_H
 #define TESTGRAPH_H
+#include <QtTest>
+#include <QCoreApplication>
 
 #include <QObject>
 #include <QTest>
@@ -13,7 +15,7 @@ private:
     Graph<int, double, true> m_graph;
 
 public:
-    explicit TestGraph(QObject *parent = nullptr);
+    TestGraph();
 
 signals:
 

@@ -1,7 +1,6 @@
-QT += testlib
-QT -= gui
+QT += gui core widgets network xml xmlpatterns testlib
 
-CONFIG += qt console warn_on depend_includepath testcase
+CONFIG += qt console warn_on depend_includepath testcase c++17
 CONFIG -= app_bundle
 
 TEMPLATE = app
@@ -14,3 +13,5 @@ SOURCES +=  \
 HEADERS += \
     testgraph.h \
     testgraphunoriented.h
+
+INCLUDEPATH += ../GraphLib

@@ -12,9 +12,9 @@ int main(int argc, char** argv)
     //Tools unit test
 
     TestGraph tg;
+    TestGraphUnoriented tguo;
     status |= QTest::qExec(&tg, argc, argv);
 
-    TestGraphUnoriented tguo;
     status |= QTest::qExec(&tguo, argc, argv);
 
 

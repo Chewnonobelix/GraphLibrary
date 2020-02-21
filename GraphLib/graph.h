@@ -100,6 +100,16 @@ public:
 
         return true;
     }
+    
+    bool addNode(NodePointer n)
+    {
+        if(hasNode(*n))
+            return false;
+
+        m_node << n;
+
+        return true;
+    }
 
     bool hasNode(NodeType n) const
     {
